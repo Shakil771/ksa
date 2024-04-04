@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="ksa1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -84,35 +84,8 @@
     <a href="https://github.com/Shakil771"><i class="fa-brands fa-github"></i>GitHub</a>
 </footer>
 <!-- footer ends here -->
-<script>
-    const menuIcon=document.getElementById("menu-icon")
-var lastScrollTop = 0;
-var navbar = document.getElementById("navbar");
-menuIcon.addEventListener("click", ()=>{
-    navbar.classList.toggle("navbar")
-    
-})
 
-var delta = 5;
-var navbarHeight = navbar.offsetHeight;
-
-window.addEventListener("scroll", function() {
-  var currentScroll = window.pageYOffset;
-
-  if (Math.abs(lastScrollTop - currentScroll) <= delta)
-    return;
-
-  if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
-    navbar.classList.remove("active");
-  } else {
-    navbar.classList.add("active");
-  }
-
-  lastScrollTop = currentScroll;
-});
-
-</script>
-
+<script src="index.js"></script>
 
 
 </body>
