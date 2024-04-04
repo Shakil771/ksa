@@ -170,10 +170,13 @@ form{
 }
 #submit-btn:hover{
     background-color: green;
+    cursor: pointer;
+    color: white;
 }
 label{
     font-size: 20px;
     font-weight: bold;
+    
 }
 input{
     font-size: 20px;
