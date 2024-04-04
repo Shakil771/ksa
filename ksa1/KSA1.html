@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ksa1.css">
+</head>
+<body>
+
+<!--navbar starts here-->
+<p id="menu-icon"><i class="fas fa-bars" ></i> Manu</p>
+
+<nav id="navbar" class="navbar">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+            <a href="KSA1.html" class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="blogs.html" class="nav_link">Blogs</a>
+        </li>
+        <li class="nav_list">
+            <a href="project.html" class="nav_link">Projects</a>
+        </li>
+        <li class="nav_list">
+            <a href="services.html" class="nav_link">Sevices</a>
+        </li>
+        
+    </ul>
+
+    
+</nav>
+<!--navbar ends here-->
+
+<div class="banner">
+    <marquee behavior="Responsive" direction="left"> Welcome to My Website...</marquee>
+</div>
+
+<div class="content">
+    <div class="column">
+        <h1 class="heading">Blogs Section</h1>
+        <div class="blogs">
+            <h2>Blogs 1</h2><br>
+            <h3 id="blog-title">Blogs Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vitae diam rutrum, nec rutrum nisi commodo. In hac habitasse platea dictumst.</p>
+        </div>
+
+        <div class="blogs">
+            <h2>Blogs 2</h2><br>
+            <h3 id="blog-title">Blogs Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vitae diam rutrum, nec rutrum nisi commodo. In hac habitasse platea dictumst.</p>
+        </div>
+
+        <div class="blogs">
+            <h2>Blogs 3</h2><br>
+            <h3 id="blog-title">Blogs Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod turpis vitae diam rutrum, nec rutrum nisi commodo. In hac habitasse platea dictumst.</p>
+        </div>
+        
+    </div>
+
+    <div class="column">
+        <h1 class="heading">About Section</h>
+        <h2>About Me</h2><br>
+        <p class="about">Name: Md. Shakil Hossain</p>
+        <p class="about">Student ID: 213002042</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cumque, quas doloremque commodi dolorem tempore ab cupiditate modi earum laudantium rem laboriosam error ad optio exercitationem magnam at expedita totam perspiciatis animi culpa qui debitis! Aliquid laudantium ullam odio incidunt aperiam quaerat unde! Nisi molestiae quidem a earum similique vero hic, est soluta molestias perferendis sint excepturi at numquam blanditiis ducimus, cupiditate, eos dicta vitae? Asperiores voluptate, obcaecati minima, quod quasi repellendus accusamus maxime ipsa illo dolor eaque ab! Doloremque ab quidem nesciunt ut atque, voluptates voluptatem iste possimus, esse corrupti velit at dolorem consequuntur assumenda voluptas! Doloremque, explicabo voluptatum.</p>
+        
+        <form>
+            <label for="email">Join Mailing List: </label><br>
+            <input type="email" placeholder="Enter your email">
+            <button id="submit-btn" type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+<!-- footer starts here -->
+<footer class="flex-space-around">
+    <p id="flw">Follow me on:</p>
+    <a href="https://www.facebook.com/my.sk.shakil/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+    <a href="https://twitter.com/ShakilHoss83145"><i class="fa-brands fa-twitter"></i>Twitter</a>
+    <a href="https://www.instagram.com/sk.shakil.58/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+    <a href="https://www.linkedin.com/in/md-shakil-hossain-b3a943297/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+    <a href="https://github.com/Shakil771"><i class="fa-brands fa-github"></i>GitHub</a>
+</footer>
+<!-- footer ends here -->
+<script>
+    const menuIcon=document.getElementById("menu-icon")
+var lastScrollTop = 0;
+var navbar = document.getElementById("navbar");
+menuIcon.addEventListener("click", ()=>{
+    navbar.classList.toggle("navbar")
+    
+})
+
+var delta = 5;
+var navbarHeight = navbar.offsetHeight;
+
+window.addEventListener("scroll", function() {
+  var currentScroll = window.pageYOffset;
+
+  if (Math.abs(lastScrollTop - currentScroll) <= delta)
+    return;
+
+  if (currentScroll > lastScrollTop && currentScroll > navbarHeight) {
+    navbar.classList.remove("active");
+  } else {
+    navbar.classList.add("active");
+  }
+
+  lastScrollTop = currentScroll;
+});
+
+</script>
+
+
+
+</body>
+</html>
