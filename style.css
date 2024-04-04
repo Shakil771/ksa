@@ -168,6 +168,9 @@ form{
     border-radius: 5px;
     background-color: rgb(79, 127, 79);
 }
+#submit-btn:hover{
+    background-color: green;
+}
 label{
     font-size: 20px;
     font-weight: bold;
