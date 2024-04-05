@@ -311,6 +311,10 @@ footer a:hover{
         padding: 10px;
     }
 
+    .about{
+        font-size: 25px;
+    }
+
     .banner {
         padding-top: 10vh;
         background-image: url('./Photo.jpg');
@@ -323,7 +327,7 @@ footer a:hover{
     
 }
 
-/*responsive section starts here*/
+/*responsive section end here*/
 
 
   
