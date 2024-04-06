@@ -270,13 +270,15 @@ footer a:hover{
     }
     #menu-icon:hover{
         background-color: var(--secondary-color);
-        height: 10vh;
         padding-top: 1rem;
         box-shadow: 1px 1px 2px;
         
     }
     .navbar{
         display: none;
+    }
+    #navbar{
+        top: 6vh;
     }
 
     .navbar.active {
