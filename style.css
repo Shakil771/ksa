@@ -302,6 +302,13 @@ footer a:hover{
     
 }
 @media (max-width: 600px) {
+    #menu-icon{
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0; /* Add this to ensure the navbar sticks to the top */
+        z-index: 1000;
+    }
     .content{
         display: grid;
         grid-template-columns: repeat(1,minmax(1));
